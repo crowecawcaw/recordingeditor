@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Recording Editor</title>
+  <meta name="description" content="A simple online tool for editing recordings.">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+  <div class="progress-window">
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+        60%
+      </div>
+    </div>
+  </div>
+
+  <div class="controls" style="dislay:none">
+    <span class="btn-pause btn btn-warning"><i class="fa fa-pause"></i></span>
+    <span class="btn-play btn btn-success"><i class="fa fa-play"></i></span>
+    <span class="btn-agc btn btn-success"><i class="fa fa-signal"></i> Automatic Volume Correction</span>
+    <span title="zoom in" class="btn-zoom-in btn btn-default"><i class="fa fa-search-plus"></i> Zoom In</span>
+    <span title="zoom out" class="btn-zoom-out btn btn-default"><i class="fa fa-search-minus"></i> Zoom Out</span>
+    <span class="btn-set-start btn btn-default" title="select start point"><i class="fa fa-step-backward"></i> Set Start</span>
+    <span class="btn-set-end btn btn-default" title="select end point"><i class="fa fa-step-forward"></i> Set End</span>
+    <span class="btn-toggle-fade btn btn-default" title="fade in and out"><i class="fa fa-signal"></i> Fade In/Out</span>
+    <span title="Download the current work as Wav file" class="btn btn-download btn-primary">
+      <i class="fa fa-download"></i>
+    </span>
+  </div>
+  <div id="playlist"></div>
+  <div class="track-drop"><span>Drag a recording here.</span></div>
+
+
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
+</body>
+
+</html>

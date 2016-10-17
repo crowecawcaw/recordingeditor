@@ -1,0 +1,24 @@
+{
+  "name": "Lecture Editor",
+  "version": "1.0.0",
+  "description": "A simple online tool for editing recordings.",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "papaparse": "^4.1.2",
+    "waveform-playlist": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "webpack": "^1.13.2",
+    "worker-loader": "^0.7.1",
+    "express": "^4.14.0"
+  }
+}
