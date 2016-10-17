@@ -1,16 +1,17 @@
 {
-  "name": "Lecture Editor",
+  "name": "RecordingEditor",
   "version": "1.0.0",
   "description": "A simple online tool for editing recordings.",
   "main": "index.js",
   "scripts": {
-    "serve": "node server.js"
+    "serve": "node server.js",
+    "dev": "webpack -d --watch",
+    "build": "webpack -p --progress --colors"
   },
-  "author": "",
+  "author": "Stephen Crowe",
   "license": "MIT",
   "dependencies": {
     "jquery": "^3.1.1",
-    "papaparse": "^4.1.2",
     "waveform-playlist": "^2.4.0"
   },
   "devDependencies": {
